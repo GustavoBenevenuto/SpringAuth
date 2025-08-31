@@ -1,6 +1,6 @@
 # SpringAuth - Authentication System with Spring Boot and JWT
 
-## Descrição
+## Description
 
 SpringAuth is an authentication and authorization project in Java using **Spring Boot**, **Spring Security**, **JWT**, and **PostgreSQL**.  
 It allows:
