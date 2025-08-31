@@ -1,0 +1,56 @@
+CREATE TABLE tb_products (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    description VARCHAR(255) NOT NULL,
+    details VARCHAR(2000) NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+-- ------------------------------
+-- 50 Inserts detalhados
+-- ------------------------------
+
+INSERT INTO tb_products (description, details) VALUES
+('Notebook Dell Inspiron', 'Notebook Dell Inspiron 15,6" com processador Intel Core i5 de 11ª geração, 8GB de RAM DDR4, SSD de 512GB, placa de vídeo integrada, sistema Windows 11 pré-instalado, bateria de longa duração, teclado retroiluminado e tela Full HD anti-reflexo. Ideal para trabalho remoto, estudos e entretenimento.'),
+('Desktop HP Pavilion', 'Computador de mesa HP Pavilion com processador Intel Core i7, 16GB RAM DDR4, SSD NVMe de 512GB, HD de 1TB, placa de vídeo NVIDIA GeForce GTX 1660, gabinete ATX com ventilação eficiente, sistema Windows 11 Pro. Perfeito para jogos, edição de vídeo e tarefas multitarefa.'),
+('Monitor LG 24"', 'Monitor LG 24 polegadas Full HD, painel IPS com ângulo de visão amplo, taxa de atualização de 75Hz, entradas HDMI e VGA, borda ultrafina, ideal para escritório, estudo ou entretenimento.'),
+('Teclado Mecânico Logitech', 'Teclado mecânico Logitech com switches táteis, retroiluminação RGB personalizável, anti-ghosting, teclado numérico completo e design ergonômico. Perfeito para gamers e digitadores profissionais.'),
+('Mouse Gamer Razer', 'Mouse óptico gamer Razer com sensor de alta precisão, até 16000 DPI, iluminação RGB personalizável, 6 botões programáveis e ergonomia para longas sessões de jogo.'),
+('Placa de Vídeo NVIDIA RTX 3060', 'Placa de vídeo NVIDIA GeForce RTX 3060 com 12GB GDDR6, suporte a Ray Tracing, DLSS, portas HDMI 2.1 e DisplayPort 1.4a. Ideal para jogos modernos e edição de vídeo em alta resolução.'),
+('HD Externo Seagate 1TB', 'HD externo portátil Seagate de 1TB, conexão USB 3.0, design compacto e resistente, compatível com Windows e Mac. Ideal para backup de arquivos, fotos, vídeos e documentos importantes.'),
+('SSD Samsung 1TB', 'SSD Samsung 1TB NVMe M.2 com velocidades de leitura de até 3500MB/s e escrita de até 3300MB/s, tecnologia V-NAND, alta durabilidade, ideal para notebooks, desktops e aplicações de alto desempenho.'),
+('Impressora HP DeskJet', 'Impressora HP DeskJet jato de tinta, impressão colorida e monocromática, conectividade USB e Wi-Fi, suporta papéis A4, fotográficos e etiquetas, ideal para uso doméstico ou home office.'),
+('Cadeira Gamer DXRacer', 'Cadeira Gamer DXRacer com encosto reclinável até 135°, apoio para braços ajustável, estofamento em couro sintético, base giratória 360°, design ergonômico e suporte lombar e cervical incluído. Perfeita para longas sessões de jogos ou trabalho.'),
+('iPhone 14', 'Smartphone Apple iPhone 14 com 128GB de armazenamento, chip A15 Bionic, câmera dupla de 12MP com modo noturno, tela Super Retina XDR OLED de 6,1 polegadas, resistência à água IP68, iOS 17, Face ID e carregamento sem fio.'),
+('Samsung Galaxy S23', 'Smartphone Samsung Galaxy S23 com 256GB, processador Snapdragon 8 Gen 2, tela AMOLED de 6,1", câmera traseira tripla de 50MP + 12MP + 10MP, bateria 3900mAh com carregamento rápido, sistema Android 14, resistência IP68.'),
+('Xiaomi Redmi Note 12', 'Smartphone Xiaomi Redmi Note 12 com 128GB de armazenamento, tela AMOLED 6,67", processador Snapdragon 685, bateria de 5000mAh, câmera quádrupla de 48MP, sistema MIUI 14 baseado em Android 13, ideal para uso diário e jogos leves.'),
+('Motorola Moto G Power', 'Smartphone Motorola Moto G Power com bateria de 5000mAh, 4GB de RAM, 64GB armazenamento, tela LCD de 6,6", câmera tripla de 50MP, sistema Android 13 e leitor de impressão digital na lateral.'),
+('Apple iPad Air', 'Tablet Apple iPad Air com tela Retina de 10,9 polegadas, chip M1, 64GB armazenamento, suporte a Apple Pencil 2ª geração, Wi-Fi 6, ideal para produtividade, desenho digital e consumo de mídia.'),
+('Samsung Galaxy Tab S8', 'Tablet Samsung Galaxy Tab S8 com tela de 11" TFT LCD, processador Snapdragon 8 Gen 1, 128GB armazenamento, S Pen inclusa, bateria 8000mAh, ideal para produtividade, desenho e entretenimento.'),
+('Smartwatch Apple Watch SE', 'Relógio inteligente Apple Watch SE com GPS, monitor cardíaco, sensor de oxigênio no sangue, resistência à água 50m, suporte a notificações e apps, ideal para saúde e fitness.'),
+('Smartwatch Samsung Galaxy Watch 5', 'Relógio inteligente Samsung Galaxy Watch 5 com monitoramento cardíaco, GPS, oxímetro, tela AMOLED, bateria de longa duração, resistência à água, ideal para esportes e monitoramento de saúde.'),
+('Fone de Ouvido Sony WH-1000XM4', 'Fone de ouvido sem fio Sony WH-1000XM4 com cancelamento ativo de ruído, 30 horas de autonomia, compatível com assistentes virtuais, carregamento rápido, design confortável.'),
+('Fone de Ouvido JBL Tune 500BT', 'Headphone Bluetooth JBL Tune 500BT com som Pure Bass, autonomia de 16 horas, design leve e dobrável, ideal para música e chamadas.'),
+('Geladeira Brastemp Frost Free', 'Geladeira Brastemp Frost Free 375L, duplex, cor inox, tecnologia frost free, prateleiras ajustáveis, gaveta de legumes, iluminação LED interna, ideal para famílias.'),
+('Fogão Electrolux 4 bocas', 'Fogão Electrolux 4 bocas com forno autolimpante, acendimento automático, design em aço inox, ideal para cozinhas residenciais.'),
+('Micro-ondas LG 30L', 'Micro-ondas LG 30L com grill, painel digital, múltiplas funções de descongelamento e cozimento, potência 1000W, ideal para aquecer alimentos rapidamente.'),
+('Liquidificador Arno', 'Liquidificador Arno 700W com jarra de vidro, 4 lâminas de aço inox, 3 velocidades e função pulsar, ideal para sucos, vitaminas e sopas.'),
+('Batedeira KitchenAid', 'Batedeira planetária KitchenAid 5 litros, 10 velocidades, corpo metálico, perfeita para bolos, massas e receitas variadas.'),
+('Aspirador de Pó Dyson', 'Aspirador vertical sem fio Dyson com 600W de potência, ciclone duplo, autonomia de 60 minutos, ideal para limpeza doméstica eficiente.'),
+('Cafeteira Nespresso', 'Cafeteira Nespresso automática, compatível com cápsulas, programa de aquecimento rápido, corpo compacto, ideal para cafés diários.'),
+('Ventilador Mondial 40cm', 'Ventilador de mesa Mondial 40cm, 3 velocidades, inclinação ajustável, silencioso e eficiente para ventilação em dias quentes.'),
+('Ar Condicionado Split LG 9000 BTUs', 'Ar condicionado Split LG 9000 BTUs, frio, tecnologia inverter, silencioso, painel digital, ideal para ambientes pequenos.'),
+('Ferro de Passar Philips', 'Ferro de passar Philips a vapor, 2000W, base cerâmica, sistema anti-gotejamento e função vapor vertical, ideal para roupas delicadas.'),
+('Notebook Asus Vivobook', 'Notebook Asus Vivobook 15,6", Intel Core i3, 8GB RAM, SSD 256GB, Windows 11, teclado retroiluminado, ideal para estudos e trabalho diário.'),
+('Monitor Samsung 27"', 'Monitor Samsung 27" Full HD, painel IPS, entradas HDMI e DisplayPort, ajuste de altura e inclinação, ideal para home office.'),
+('Teclado Sem Fio Logitech', 'Teclado compacto Logitech sem fio, conexão Bluetooth, autonomia de 12 meses, ideal para produtividade e uso diário.'),
+('Mouse Sem Fio Microsoft', 'Mouse óptico Microsoft sem fio, ergonômico, autonomia de 12 meses, conexão Bluetooth ou USB, ideal para escritório.'),
+('Placa de Vídeo AMD Radeon RX 6600', 'Placa de vídeo AMD Radeon RX 6600, 8GB GDDR6, suporte a Ray Tracing, ideal para jogos em 1080p e 1440p.'),
+('HD Externo WD 2TB', 'HD externo WD de 2TB, USB 3.1, design resistente, ideal para backup de arquivos e transporte de dados.'),
+('SSD Kingston 512GB', 'SSD Kingston 512GB, SATA III, alta velocidade de leitura/escrita, ideal para upgrade de notebooks e desktops.'),
+('Impressora Epson EcoTank', 'Impressora Epson EcoTank, tanque de tinta recarregável, impressão colorida e monocromática, conectividade USB e Wi-Fi, ideal para escritório.'),
+('Cadeira de Escritório Ergoplax', 'Cadeira giratória Ergoplax, ajuste de altura e inclinação, apoio lombar e braço ajustável, design ergonômico e confortável para longas horas de trabalho.'),
+('iPhone SE', 'Smartphone Apple iPhone SE, 64GB, chip A13 Bionic, câmera traseira de 12MP, tela Retina HD 4,7", resistente à água IP67, ideal para usuários que querem desempenho compacto.'),
+('Samsung Galaxy A54', 'Smartphone Samsung Galaxy A54, 128GB, câmera tripla 50MP + 12MP + 5MP, tela Super AMOLED de 6,4", bateria 5000mAh, ideal para uso diário e fotografia.'),
+('Xiaomi Poco X5', 'Smartphone Xiaomi Poco X5, 256GB, tela AMOLED 6,67", câmera quádrupla 48MP + 8MP + 2MP + 2MP, bateria 5000mAh, carregamento rápido, ideal para jogos e multimídia.'),
+('Motorola Edge 30', 'Smartphone Motorola Edge 30, 128GB, Snapdragon 778G, tela OLED 6,5, câmera principal 50MP, bateria 4020mAh, ideal para usu''arios que buscam performance e design');

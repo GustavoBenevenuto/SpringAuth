@@ -1,0 +1,54 @@
+# Compiled class files
+*.class
+
+# Maven / Gradle
+target/
+build/
+!.mvn/wrapper/maven-wrapper.jar
+!.gradle/wrapper/gradle-wrapper.jar
+.mvn/
+.gradle/
+
+# IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Logs
+*.log
+logs/
+log/
+
+# Spring Boot
+spring-boot-devtools.properties
+spring-boot.log
+*.tmp
+
+# Environment files
+.env
+*.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+docker-compose.override.yaml
+*.pid
+
+# PostgreSQL data (if mapped locally)
+postgres-data/
+
+# Lombok generated files
+**/lombok-generated/
+
+# Eclipse
+*.classpath
+*.project
+*.settings/
+
+# IntelliJ
+out/
